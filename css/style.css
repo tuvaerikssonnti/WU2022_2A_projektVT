@@ -5,7 +5,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 51);
-    height: 150px;
+    height: 167.6px;
     width: auto;
     margin-left: auto;
     margin-right: auto;
@@ -52,7 +52,7 @@ nav {
     top: -1000px;
     width: 200px;
     list-style: none;
-    transition: all 0.1s;
+    transition: all 1s;
 }
 
 .nav-active {
@@ -77,7 +77,7 @@ nav {
 #nav-links a:hover {
     color: darkgrey;
     background-color: rgb(87, 72, 155);
-    transition: ease 0.4s;
+    transition: ease 0.5s;
 }
 
 .line {
@@ -86,7 +86,7 @@ nav {
     background-color: rgb(255, 255, 255);
     margin: 7px;
     border-radius: 20%;
-    transition: all 0.5s;
+    transition: all 2s;
 }
 
 .crossed_line #line_2 {
@@ -94,11 +94,11 @@ nav {
 }
 
 .crossed_line #line_1 {
-    transform: rotate(-45deg) translate(-11px, 11px);
+    transform: rotate(-410deg) translate(-11px, 11px);
 }
 
 .crossed_line #line_3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(410deg) translate(-5px, -6px);
 }
 
 #meny {
@@ -118,8 +118,10 @@ footer {
     margin-right: auto;
 }
 
-#Loggafooter{
-    height: 45px;
+
+
+#Logga {
+    height: 60px;
     width: auto;
 }
 
@@ -133,12 +135,7 @@ h1 {
     justify-content: center;
     top: 200px;
 }
-main {
-background-color: black;
-height: 1000px;
-width: auto;
 
-}
 
 input {
     color: rgb(2, 7, 7)
@@ -161,4 +158,156 @@ a {
 color: white;
 text-underline-offset: none;
 
+}
+
+#omoss {
+    background-image:  url("../img/konsert\ omoss.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 806px
+}
+
+.column {
+    float:left;
+    width: 500px;
+    padding: 30px;
+    height: 300px;
+    transition: ease 0.5s;
+    
+
+  }
+  
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: flex;
+    transition: ease 0.5s;
+  }
+
+  #wrapper {
+    gap: 5px;
+    width: 100vh; 
+    height: 150px;
+    display: grid;
+    grid-template-columns: 33.33%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+
+        "s1 s2 s3"
+  }
+    
+  #Loggafooter{
+    height: 45px;
+    width: auto;
+    grid-area: s2;
+}
+
+#section2{
+    background-image: url("../img/logga.png");
+
+}
+
+h3 {
+color: rgb(19, 48, 126);
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+font-size: 90px;
+justify-content: center;
+text-align: center;
+}
+
+main {
+    background-color: rgb(0, 0, 7);
+    height: 100vh;
+    width: auto;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
