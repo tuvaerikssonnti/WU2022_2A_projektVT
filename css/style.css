@@ -22,8 +22,9 @@ header {
     height: 700px;
 
 }
-@media screen {
-    
+@media screen and (max-width:730px)
+
+{
 }
 
 
@@ -290,4 +291,82 @@ align-items: center;
 
 }
 
-    
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: #0690e6;
+}
+
+.container{
+    background-color: #ffffff;
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.container_2{
+    background-color: #8a55bb;
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 30%;
+    top: 50%;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.container_3{
+    background-color: #4f329a;
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 70%;
+    top: 90%;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+
+}
+
+#omossbilder {
+    width: 450px;
+    height: 315px;
+    border-radius: 40px;
+
+}
+
+#omosstext {
+    top: 50%;
+    left: 50%;
+}
+
+.image-container{
+    position: relative;
+}
+
+#content{
+    position: relative;
+    width: 460px;
+    height: 280px;
+    display: none;
+}
+
+.active{
+    display: block;
+}
