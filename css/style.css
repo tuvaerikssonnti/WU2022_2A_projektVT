@@ -187,12 +187,16 @@ text-decoration: none;
 }
 
 .column {
-    float:left;
+    float: left ;
     width: 500px;
     padding: 30px;
     height: 300px;
-    transition: ease 0.5s;
-    
+
+  }
+
+    .column:hover {
+        transition: 0.5 ease-out;
+        color: azure;
 
   }
 
@@ -308,6 +312,24 @@ ul {
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+#container:hover {
+    background-color: black;
+    transition: 0.9 ease-out;
+}
+
+#container_4:hover {
+    background-color: black;
+    transition: 0.9 ease-out;
+}
+#container_5:hover {
+    background-color: black;
+    transition: 0.9 ease-out;
+}
+#container_6:hover {
+    background-color: black;
+    transition: 0.9 ease-out;
 }
 
 #container_2{
@@ -447,10 +469,7 @@ ul {
     height: 315px;
 }
 
-.row {
-    width: 300px;
-    width: auto;
-}
+
 
 h4 {
     z-index: 1;
@@ -500,7 +519,10 @@ h6 {
     position: relative;
 }
 
-#sport {
-    border-radius: 40%;
+.sport {
+    border-radius: 60px;
+    
 }
-
+.sport:hover {
+    transition: 0.5s ease-out;
+}
